@@ -36,7 +36,7 @@ export default function Blog() {
         <div className="container">
           <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-2 lg:gap-10">
             {blogPosts.map((post) => (
-              <BlogPostCard key={post.id} post={post} />
+              <BlogPostCard key={post.id} post={post} linked />
             ))}
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function Blog() {
         <div className="container">
           <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-2 lg:gap-10">
             {blogPostsSection3.map((post) => (
-              <BlogPostCard key={post.id} post={post} />
+              <BlogPostCard key={post.id} post={post} linked />
             ))}
           </div>
         </div>

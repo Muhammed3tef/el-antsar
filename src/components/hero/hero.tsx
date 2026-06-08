@@ -26,7 +26,7 @@ const Hero = ({
     >
       <Image
         src={backgroundImage}
-        alt=""
+        alt={title}
         fill
         priority
         sizes="100vw"

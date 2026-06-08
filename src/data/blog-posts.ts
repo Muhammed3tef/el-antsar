@@ -232,3 +232,16 @@ export const blogPostsSection3: BlogPost[] = [
     ],
   },
 ];
+
+export function getAllBlogPosts(): BlogPost[] {
+  return [...blogPosts, ...blogPostsSection3];
+}
+
+export function getBlogPostBySlug(slug: string): BlogPost | undefined {
+  return getAllBlogPosts().find((post) => post.id === slug);
+}
+
+export function getBlogPostDescription(post: BlogPost): string {
+  const paragraph = post.content.find((block) => block.type === "paragraph");
+  return paragraph?.type === "paragraph" ? paragraph.text : post.title;
+}
