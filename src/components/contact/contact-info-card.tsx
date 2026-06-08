@@ -13,16 +13,16 @@ const iconStyles: Record<
   { wrapper: string; icon: ReactNode }
 > = {
   phone: {
-    wrapper: "bg-[#1b1b1b] text-white",
-    icon: <IoCall size={22} aria-hidden="true" />,
+    wrapper: "bg-transparent text-[#1b1b1b]",
+    icon: <IoCall size={28} aria-hidden="true" />,
   },
   whatsapp: {
     wrapper: "bg-transparent text-[#25d366]",
     icon: <FaWhatsapp size={30} aria-hidden="true" />,
   },
   location: {
-    wrapper: "bg-[#3d4f5f] text-white",
-    icon: <IoLocationOutline size={24} aria-hidden="true" />,
+    wrapper: "bg-transparent text-[#3d4f5f]",
+    icon: <IoLocationOutline size={28} aria-hidden="true" />,
   },
   tiktok: {
     wrapper: "bg-transparent text-[#1b1b1b]",
